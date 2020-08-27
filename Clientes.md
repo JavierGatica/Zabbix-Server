@@ -65,4 +65,8 @@ Estos equipos se encuentran registrado a un servidor RH-Satellite que proporcion
 
     [root@agent01 ~]# subscription-manager register --org="ansible-labs" --activationkey="RHEL-Base"
     
+
+**Validar Repositorio agregados**
+
+
 Para este proceso nosotros ya debemos tener preparado nuestro servidor satellite o reposiorios locales para ser consumidos, junto a esto debemos de terner creadas nuestra llave, Content View.
