@@ -18,11 +18,11 @@ Estos equipos se encuentran registrado a un servidor RH-Satellite que proporcion
 
 ## Proceso de registro.
 
-Descarcar el certificado de katello a los clientes.
+**Descarcar el certificado de katello a los clientes.**
 
     [root@agent01 ~]# curl --insecure --output katello-ca-consumer-latest.noarch.rpm https://satellite-infra.ansible-labs.com/pub/katello-ca-consumer-latest.noarch.rpm
     
-Instalar el certificado.
+**Instalar el certificado.**
 
     [root@agent01 ~]# yum localinstall katello-ca-consumer-latest.noarch.rpm  -y
     Complementos cargados:product-id, search-disabled-repos, subscription-manager
@@ -60,3 +60,9 @@ Instalar el certificado.
 
     Instalado:
       katello-ca-consumer-satellite-infra.ansible-labs.com.noarch 0:1.0-1      
+
+**Agregar la llave para su registro.**
+
+    [root@agent01 ~]# subscription-manager register --org="ansible-labs" --activationkey="RHEL-Base"
+    
+Para este proceso nosotros ya debemos tener preparado nuestro servidor satellite o reposiorios locales para ser consumidos, junto a esto debemos de terner creadas nuestra llave, Content View.
