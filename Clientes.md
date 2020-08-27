@@ -9,7 +9,7 @@ Para el siguiente ejercio utilizaremos 6 equipos los cuales son los siguientes:
 * agent06.ansible-labs.com
 
 Los cuales cuentan con las siguientes caracteristicas:
-*SO:* RHEL 7.8 - Minimal.
-*RMA:* 1 GB.
-*HDD:* 6 GB.
-*Vcpu:* 1.
+* **SO:** RHEL 7.8 - Minimal.
+* **RMA:** 1 GB.
+* **HDD:** 6 GB.
+* **Vcpu:** 1.
